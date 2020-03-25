@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "pretty": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@components/*": ["src/components/*"]
+    },
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules",
+    "e2e",
+    "dist"
+  ]
+}

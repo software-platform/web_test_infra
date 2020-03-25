@@ -2,10 +2,10 @@
 **/node_modules
 **/Polly/recordings/*
 **/Polly/build/*
+yarn-error.log
 
 # IDE cruft
 .idea
-yarn-error.log
 
 # Todos and scratchpads
 notes.md
