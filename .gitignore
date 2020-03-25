@@ -1,0 +1,14 @@
+# Generated content
+**/node_modules
+**/Polly/recordings/*
+**/Polly/build/*
+
+# IDE cruft
+.idea
+yarn-error.log
+
+# Todos and scratchpads
+notes.md
+
+# Exceptions
+!.placeholder
