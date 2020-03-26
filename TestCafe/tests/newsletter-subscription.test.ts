@@ -49,7 +49,7 @@ test.requestHooks(logger)('Happy path', async t => {
   // Cookie notification covers the input so we need to dismiss it.
   await homePage.acceptCookies();
 
-  await homePage.subscribeToNewsletterAs('writhe@mailinator.com');
+  await homePage.subscribeToNewsletterAs('rh.test.user@mailinator.com');
 
   // TEST: Success message exists
   await t.expect(homePage.$subscriptionSuccessMessage.exists).ok();

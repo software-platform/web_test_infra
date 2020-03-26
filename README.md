@@ -43,7 +43,8 @@ This should serve as an example of common E2E tasks, such as finding DOM element
 
 
 **2. Newsletter subscription - testing PollyJS integration**
-This test requires a running PollyJS server. The expectation is for all the test runs except the first to *not* produce an asynchronous request to the real API. All subsequent tests should use data recorded during the first run.
+This test requires a running PollyJS server. The expectation is for all the test runs except the first to *not* produce an asynchronous request to the real API. All subsequent tests should use data recorded during the first run.  
+To avoid polluting the email database, the email address used for this test points to a single, public, receive-only mailbox at mailinator.com. To unsubscribe - go [here](https://www.mailinator.com/v3/index.jsp?zone=public&query=rh.test.user#/#inboxpane). 
 
 **Scenario:** Subscribing to Robinhood Snacks
 

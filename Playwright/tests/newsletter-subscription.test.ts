@@ -66,7 +66,7 @@ describe('Newsletter subscription (with PollyJS)', () => {
 
     await page.goto('https://robinhood.com', { waitUntil: 'networkidle0' });
     await homepage.acceptCookies();
-    await homepage.subscribeToNewsletterAs('writhe@mailinator.com');
+    await homepage.subscribeToNewsletterAs('rh.test.user@mailinator.com');
 
     // TEST: Success message appears
     expect(await homepage.getSubscriptionSuccessMessage()).toBeTruthy();
