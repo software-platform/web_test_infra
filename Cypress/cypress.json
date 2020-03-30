@@ -1,0 +1,5 @@
+{
+  "chromeWebSecurity": false,
+  "integrationFolder": "cypress/tests",
+  "testFiles": "**/*.test.ts"
+}
