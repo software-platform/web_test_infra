@@ -3,7 +3,7 @@ import { Page, Frame } from 'playwright';
 import { PageObject } from './PageObject';
 
 const GREENHOUSE_IFRAME_SELECTOR = '#grnhse_iframe';
-const ABOUT_THE_COMPANY_FRAGMENT = 'Robinhood is democratizing our financial system. With customers at the heart of our decisions, Robinhood is lowering barriers, removing fees, and providing greater access to financial information.';
+const ABOUT_THE_COMPANY_FRAGMENT = 'About the company';
 const SUBMIT_BUTTON_LABEL = 'Submit Application';
 
 export class JobPage extends PageObject {

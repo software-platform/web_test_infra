@@ -10,6 +10,9 @@
     "@pollyjs/core": "^4.0.2",
     "@pollyjs/persister-rest": "^4.0.2",
     "testcafe": "^1.8.2",
+    "testcafe-browser-provider-browserstack": "^1.13.0-alpha.1",
+    "testcafe-browser-provider-lambdatest": "^2.0.1",
+    "testcafe-browser-provider-saucelabs": "^1.8.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   },
@@ -18,6 +21,15 @@
     "polly:build": "webpack --config ./Polly/webpack.config.js",
     "polly:start": "polly listen -d ./Polly/recordings -p 4000",
     "test:chrome": "testcafe \"chrome -incognito\" ./tests/*.test.ts",
-    "test:ff": "testcafe \"firefox –private-window\" ./tests/*.test.ts"
+    "test:ff": "testcafe \"firefox –private-window\" ./tests/*.test.ts",
+    "test:remote-lambdatest-safari": "LT_USERNAME=filip.moroz LT_ACCESS_KEY=jUH7t35XFd2hli1oeZvYb8SAoBlwpwquU0uULCQAzZmDlKsttg testcafe \"lambdatest:Safari@12.0:MacOS Mojave\" ./tests/*.test.ts",
+    "test:remote-lambdatest-chrome": "LT_USERNAME=filip.moroz LT_ACCESS_KEY=jUH7t35XFd2hli1oeZvYb8SAoBlwpwquU0uULCQAzZmDlKsttg testcafe \"lambdatest:Chrome@80.0:macOS Mojave\" ./tests/*.test.ts",
+    "test:remote-browserstack-safari": "BROWSERSTACK_USERNAME=filipmoroz1 BROWSERSTACK_ACCESS_KEY=XQVpzAYHxpgDLPx9zpfg testcafe \"browserstack:safari@12.1:OS X Mojave\" ./tests/*.test.ts",
+    "test:remote-browserstack-chrome": "BROWSERSTACK_USERNAME=filipmoroz1 BROWSERSTACK_ACCESS_KEY=XQVpzAYHxpgDLPx9zpfg testcafe \"browserstack:chrome@80.0:OS X Mojave\" ./tests/*.test.ts",
+    "test:remote-saucelabs-safari": "SAUCE_USERNAME=filip.moroz SAUCE_ACCESS_KEY=4d1b0869-9497-4172-a2e5-8afbbfd78c7d  testcafe \"saucelabs:Safari@12.0:macOS 10.14\" ./tests/*.test.ts",
+    "test:remote-saucelabs-chrome": "SAUCE_USERNAME=filip.moroz SAUCE_ACCESS_KEY=4d1b0869-9497-4172-a2e5-8afbbfd78c7d  testcafe \"saucelabs:Chrome@80.0:macOS 10.14\" ./tests/*.test.ts",
+    "capabilities:lambdatest": "testcafe -b lambdatest > capabilities-lambdatest.txt",
+    "capabilities:browserstack": "BROWSERSTACK_USERNAME=filipmoroz1 BROWSERSTACK_ACCESS_KEY=XQVpzAYHxpgDLPx9zpfg testcafe -b browserstack > capabilities-browserstack.txt",
+    "capabilities:saucelabs": "SAUCE_USERNAME=filip.moroz SAUCE_ACCESS_KEY=4d1b0869-9497-4172-a2e5-8afbbfd78c7d testcafe -b saucelabs > capabilities-saucelabs.txt"
   }
 }

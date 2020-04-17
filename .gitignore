@@ -2,13 +2,23 @@
 **/node_modules
 **/Polly/recordings/*
 **/Polly/build/*
-yarn-error.log
+**/cypress/screenshots
+**/cypress/videos
+**/cypress/support
+**/cypress/fixtures/example.json
+.lambdatest
+capabilities-*.txt
+CodeceptJS/output
 
 # IDE cruft
 .idea
 
 # Todos and scratchpads
 notes.md
+
+# Logs
+yarn-error.log
+lambdaTunnelLog.log
 
 # Exceptions
 !.placeholder

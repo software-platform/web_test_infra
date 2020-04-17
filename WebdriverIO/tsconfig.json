@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react",
+    "paths": {
+      "*": [ "./*" ],
+      "src/*": ["./src/*"],
+      "tests/*": ["./tests/*"]
+    },
+    "types": ["node", "mocha", "@wdio/sync"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "ES2017",
+    "module": "CommonJS"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

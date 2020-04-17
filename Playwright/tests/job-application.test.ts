@@ -17,7 +17,19 @@ describe('Job application', () => {
 
   beforeAll(async () => {
     // NOTE: `true` is the default value for `headless` option, but is not omitted here for ease of debugging.
-    browser = await playwright.webkit.launch({ headless: true });
+    // browser = await playwright.webkit.launch({ headless: true });
+
+    // NOTE: The code below should, but does not work with any PAAS I know of and it does
+    //       not look like it's the service's fault. The last known (to me) version of Playwright
+    //       that connects to these services was 0.9, but back then the key was "browserWSEndpoint" (just like in Puppeteer)
+
+    // const browser = await playwright.chromium.connect({
+    //   wsEndpoint: 'wss://chrome.browserless.io',
+    // });
+
+    // const browser = await playwright.chromium.connect({
+    //   wsEndpoint: 'wss://chrome.headlesstesting.com?token=1C75F5F0218B6BAC22&browserVersion=dev',
+    // });
   });
 
   afterAll(async () => {
@@ -75,7 +87,6 @@ describe('Job application', () => {
     await jobPage.fillInputWithLabel('First Name', 'Test');
     await jobPage.fillInputWithLabel('Last Name', 'User');
     await jobPage.fillInputWithLabel('Email', 'not.actually.an.email');
-    await jobPage.fillInputWithLabel('Phone', 'iPhone, obviously');
     await jobPage.submit();
 
     // TEST: Error message appears
