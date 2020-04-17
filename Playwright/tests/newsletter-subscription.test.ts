@@ -64,7 +64,8 @@ describe('Newsletter subscription (with PollyJS)', () => {
   test('Happy path', async () => {
     const homepage = new HomePage(page);
 
-    await page.goto('https://robinhood.com', { waitUntil: 'networkidle0' });
+    // await page.goto('https://robinhood.com', { waitUntil: 'networkidle0' });
+    await page.goto('https://robinhood.com');
     await homepage.acceptCookies();
     await homepage.subscribeToNewsletterAs('rh.test.user@mailinator.com');
 

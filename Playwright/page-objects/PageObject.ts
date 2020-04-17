@@ -13,6 +13,6 @@ export class PageObject {
   }
 
   waitForNetwork() {
-    return this.page.waitForLoadState({ waitUntil: 'networkidle0' });
+    return this.page.waitForLoadState('networkidle0');
   }
 }

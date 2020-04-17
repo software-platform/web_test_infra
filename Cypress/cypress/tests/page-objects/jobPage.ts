@@ -1,4 +1,4 @@
-const ABOUT_THE_COMPANY_FRAGMENT = 'Robinhood is democratizing our financial system. With customers at the heart of our decisions, Robinhood is lowering barriers, removing fees, and providing greater access to financial information.';
+const ABOUT_THE_COMPANY_FRAGMENT = 'About the company';
 
 export const jobPage = {
   getHeader: () => cy.get('h1.app-title'),

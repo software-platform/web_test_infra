@@ -5,13 +5,18 @@
 **/cypress/screenshots
 **/cypress/videos
 **/cypress/support
-yarn-error.log
+.lambdatest
+capabilities-*.txt
 
 # IDE cruft
 .idea
 
 # Todos and scratchpads
 notes.md
+
+# Logs
+yarn-error.log
+lambdaTunnelLog.log
 
 # Exceptions
 !.placeholder

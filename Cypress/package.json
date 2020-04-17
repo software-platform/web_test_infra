@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run cypress:headless",
-    "cypress:headless": "cypress run",
-    "cypress:open": "cypress open",
+    "test": "cypress run",
+    "test:headful": "cypress open",
+    "test:cloud": "cypress run --record --key 0882a1fc-5e9b-48c1-b55f-81632f1a25c0",
     "polly:start": "polly listen -d ./Polly/recordings -p 4000"
   },
   "keywords": [],

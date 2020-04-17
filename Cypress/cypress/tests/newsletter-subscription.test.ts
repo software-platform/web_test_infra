@@ -37,11 +37,8 @@ describe('Newsletter subscription', () => {
       },
     );
     cy.wait(1000);
-
     homePage.acceptCookies();
-
     homePage.subscribeToNewsletterAs('rh.test.user@mailinator.com');
-
     // TEST: Success message appears
     homePage.getSubscriptionSuccessMessage().should('exist');
 
