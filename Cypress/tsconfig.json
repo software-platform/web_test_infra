@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "target": "es5",
-    "lib": ["es5", "dom"],
+    "lib": ["es2016", "dom"],
     "types": ["cypress"],
     "esModuleInterop": true
   },
