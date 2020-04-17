@@ -229,7 +229,8 @@ Testing against Firefox (Nightly, since stable version does not speak devtools, 
   }
 },
 ```
-Initially, the `binary` field would get ignored, but it was a [trivial fix](https://github.com/webdriverio/webdriverio/pull/5198) (yes, I'm an official contributor to the WebdriverIO project, thankyouverymuch).
+Initially, the `binary` field would get ignored, but it was a [trivial fix](https://github.com/webdriverio/webdriverio/pull/5198) (I guess I'm an official contributor to the WebdriverIO project, now). In case the change is not live, yet - there is a `patch-wdio` NPM script in the repo. It should replace the offending file with a fixed version.  
+Firefox support is still very much a WIP - one of the tests fails, probably because iframe switching is not implemented there, yet.
 
 **Typescript support**
 Type definitions are included in the package, but in order to write test code in TS, [some configuration](https://webdriver.io/docs/typescript.html#framework-setup) is required. 
