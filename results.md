@@ -49,7 +49,7 @@ There are three caveats:
 - Replayed requests will bypass TestCafe's request logger.
 
 **Cloud service providers**
-I tested the framework with the three major Selenium-Grid-powered PAASes: BrowserStack, Sauce Labs and LambdaTest, with no problems at all. The differences between the providers are summarised in the [PAAS](#) section of this document. There is a browser provider plugin for browserless.io, but it's beta and not actively developed - it's been 11 months since last commits. AFAIK, platforms offering devtools-powered headless browsers, such as 0browser.com or headlesstesting.com are not compatible with TestCafe.
+I tested the framework with the three major Selenium-Grid-powered PAASes: BrowserStack, Sauce Labs and LambdaTest, with no problems at all. There is a browser provider plugin for browserless.io, but it's unfinished and not actively developed - it's been 11 months since last commits. AFAIK, platforms offering devtools-powered headless browsers, such as 0browser.com or headlesstesting.com are not compatible with TestCafe.
 
 **TL;DR**
 Great browser support, nice API, sufficient selector engine, no problems with iframes or external scripts, can use major cloud providers. What's not to like?

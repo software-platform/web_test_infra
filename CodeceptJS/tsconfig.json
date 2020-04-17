@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": ["es2016", "es2017", "dom"],
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "./steps"
+    ],
+    "outDir": "./ts"
+  }
+}

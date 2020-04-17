@@ -5,8 +5,10 @@
 **/cypress/screenshots
 **/cypress/videos
 **/cypress/support
+**/cypress/fixtures/example.json
 .lambdatest
 capabilities-*.txt
+CodeceptJS/output
 
 # IDE cruft
 .idea
