@@ -448,7 +448,7 @@ In the "framework" category, Cypress is clearly more popular and - possibly - fa
 |TestCafe   |5  |All of them         |4        |4              |5   |4; promise                |4      |
 |Cypress    |5  |Chrome, FF (beta)   |1/4 *    |3              |? * |3 *; global queue         |4 *    |
 |Playwright |4  |Chrome, FF, Webkit* |4        |4              |0 * |4; promise                |4      |
-|WebdriverIO|4  |Chrome, FF (nightly)|5        |5              |4 * |5; sync / promise         |4      |
+|WebdriverIO|4  |All of them         |5        |5              |4 * |5; sync / promise         |4      |
 |CodeceptJS |3  |n/a                 |n/a      |4              |n/a |4; BBD-style, global queue|3      |
 
 - Cypress' stability is split between app/runner (1) and headless (4).  
